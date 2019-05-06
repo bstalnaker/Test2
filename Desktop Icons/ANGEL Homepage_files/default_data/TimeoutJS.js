@@ -1,0 +1,2 @@
+
+var nSessionTimeout = 90;

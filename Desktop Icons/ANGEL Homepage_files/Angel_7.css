@@ -1,0 +1,235 @@
+/*
+[Theme Wizard Settings]
+PORTAL_CSS=/AngelThemes/Themes/Shadow/portal.css
+SIDEBAR_BUTTONS_CSS=/AngelThemes/Themes/Round Blue Glass/buttons.css
+BANNER_CSS=/AngelThemes/Themes/Flat White/banner.css
+NUGGET_CSS=/AngelThemes/Themes/Rounded/nugget.css
+TOOLBAR_CSS=
+TITLEBAR_CSS=
+TABBAR_CSS=
+TAB_CSS=
+BUBBLE_CSS=
+PORTAL_ICONS_CSS=
+TAB_ICONS_CSS=
+MAP_ICONS_CSS=/AngelThemes/themes/Normal/mapicon.css
+SUBJECT_CSS=
+
+IMPORT_1=
+IMPORT_2=
+IMPORT_3=
+
+FONT_FACE=Arial,Verdana,Helvetica,sans-serif
+TEXT_SIZE=
+TEXT_ATTRIB=
+LINK_ATTRIB=
+HOVER_ATTRIB=
+
+PAGE_ATTRIB=
+BANNER_ATTRIB=
+TAB_ON_ATTRIB=
+TAB_OFF_ATTRIB=
+TABBAR_ATTRIB=
+TOOLBAR_ATTRIB=
+TITLEBAR_ATTRIB=
+NUGTITLE_ATTRIB=
+NUGBOX_ATTRIB=
+NOTE_ATTRIB=
+
+PAGE_BACKGROUND_COLOR=
+PAGE_TEXT_COLOR=#333333
+PAGE_LINK_COLOR=#1E439B
+PAGE_HIGHLIGHT_COLOR=#793619
+TITLEBAR_TEXT_COLOR=
+TITLEBAR_BACKGROUND_COLOR=
+NOTE_TEXT_COLOR=
+NOTE_BACKGROUND_COLOR=
+PGTITLE_TEXT_COLOR=
+BREADCRUMB_BACKGROUND_COLOR=#89A0BC
+BREADCRUMB_TEXT_COLOR=#ffffff
+
+BANNER_TEXT_COLOR=
+BANNER_BACKGROUND_COLOR=
+TOOLBAR_TEXT_COLOR=
+TOOLBAR_BACKGROUND_COLOR=
+NUGTITLE_TEXT_COLOR=#333333
+NUGTITLE_BACKGROUND_COLOR=#E8EEF7
+NUGBOX_TEXT_COLOR=
+NUGBOX_BACKGROUND_COLOR=
+
+TAB_OFF_TEXT_COLOR=#666666
+TAB_OFF_BACKGROUND_COLOR=#FFFFFF
+TAB_ON_TEXT_COLOR=#333333
+TAB_ON_BACKGROUND_COLOR=#E8EEF7
+
+MAP_TEXT_COLOR=
+MAP_BACKGROUND_COLOR=
+MAP_FOOTER_TEXT_COLOR=
+MAP_FOOTER_BACKGROUND_COLOR=
+
+[End Theme Wizard Settings]
+*/
+
+/*BEGIN_TEMPLATE*/
+@import url("/AngelThemes/_global.css");
+@import url("/AngelThemes/Themes/Shadow/portal.css");
+@import url("/AngelThemes/Themes/Round Blue Glass/buttons.css");
+@import url("/AngelThemes/themes/Normal/mapicon.css");
+@import url("/AngelThemes/Themes/Flat White/banner.css");
+@import url("/AngelThemes/Themes/Rounded/nugget.css");
+@import url("/AngelThemes/Themes/Round White Glass/bubble.css");
+/***********************************************************************
+* Styles and font sizes
+***********************************************************************/
+body { }
+body, td, th { font-family:Arial,Verdana,Helvetica,sans-serif }
+a, body.toc .nugBody a {  }
+a:hover, body.toc .nugBody a:hover {  }
+body.bodyLessons, body.bodyDefault, body.bodyCalendar {  } 
+.toolbarDiv {  }
+.titlebarDiv {  }
+.shadedDiv {  }
+/***********************************************************************
+* Colors
+***********************************************************************/
+html, body, .rightCorner div, .leftCorner div, #subject_image { background-color: }
+body { color:#333333; }
+a, body.toc .nugBody a { color:#1E439B; }
+a:hover, .highlight, a.highlight { color:#793619; }
+.pageTitle, .pageTitleSpan, .pageSubtitleSpan { }
+
+/* toolbar colors */
+.toolbarDiv { }
+.toolbarDiv, .toolbarDiv a, .toolbarDiv a:hover { }
+
+/* portal interface colors */
+body.interface, #tabMenu .rightCorner div, #tabMenu .leftCorner div { }
+body.interface, body.interface a, body.interface a:hover { color:#333333; }
+
+/* banner colors */
+#bannerSection .banner, #bannerSection .banner #tabMenu .rightCorner div, #bannerSection .banner #tabMenu .leftCorner div { }
+#bannerSection .banner, #bannerSection .banner a, #bannerSection .banner a:hover, #bannerSection .banner .pageTitle, #bannerSection .banner .pageTitle a, #bannerSection .banner .pageTitle a:hover { }
+
+/* tab colors */
+#bannerSection #tabMenu li a, #bannerSection #tabMenu li a:hover {color:#32538F; }
+#bannerSection .tabbar, #bannerSection #tabMenu li a.active, #bannerSection #tabMenu li a.active:hover { background-color:#335490;color:#ffffff; }
+
+/* nugget colors */
+.nugTitle, #popup_title {color:#ffffff; }
+.nugTitle, .nugTitle a, .nugTitle a:hover, #popup_title a, #popup_title a:hover { color:#ffffff; }
+.nugTitle, .nugBody, .nugFooter, #popup { border-color:#ffffff; }
+.nugBody { }
+.nugBody, .nugBody a, .nugBody a:hover { }
+/* Note: If nugget body BG is set you need to handle custom styles for inline nuggets */
+html.toc, body.toc { }
+
+/* map colors */
+html.toc, body.toc { }
+body.toc, body.toc .nugBody a, body.toc .nugBody a:hover { }
+#guideMenu { }
+#guideMenu, #guideMenu a, #guideMenu a:hover { }
+
+/*END_TEMPLATE*/
+@charset "UTF-8";
+/* CSS Document */
+
+@import "/AngelThemes/_global.css";
+@import "/AngelThemes/Themes/Indigo/portal.css";
+/* @import "/AngelThemes/Themes/Round White Glass/buttons.css"; */
+@import "/AngelThemes/themes/Normal/mapicon.css";
+@import "/AngelThemes/Themes/White/banner.css";
+@import "/AngelThemes/Themes/Rounded/nugget.css";
+@import "/AngelThemes/Themes/Rounded/tabbar.css";
+@import "/AngelThemes/Themes/Square/tab.css";
+@import "/AngelThemes/Themes/Round White Glass/bubble.css";
+
+
+/* new stuff */
+
+body {
+	color: #333;
+	font-size: 0.8em;
+}
+
+body.site_banner {
+background-color: transparent !important;
+}
+
+div#bannerSection {
+	padding:10px 0 10px 40px !important;
+	background:#335588 url(../psu_banner_page.gif) repeat-x scroll 0 0;
+}
+
+.bannerWin {
+	overflow:hidden;
+}
+
+.sitebanner {
+	margin:5px 0 0 !important;
+	padding:0 !important;
+}
+
+#shield {
+margin-left:5px;
+margin-top:0;
+position:relative;
+}
+
+ul#globalNav {
+	background-image: url(../psu_sidebar2.gif);
+}
+
+div#breadcrumbSection {
+	background: #F0F0F0 url(../psu_breadcrumb_left.gif) no-repeat scroll 0 0;
+}
+
+.nugTitle {
+	background-image:url(../psu_titlebar.gif);
+}
+#pageSidebar {
+background-color: #F0F0F0;
+}
+
+small .descriptionSpan {
+font-size:1em;
+}
+
+.descriptionSpan {
+font-size:0.9em;
+}
+
+.toolbarDiv {
+border-bottom:1px solid #CCCCCC;
+}
+
+#bannerSection .pageTitle {
+display:block !important;
+font-weight:bold !important;
+position:relative;
+right:20px;
+text-align:right;
+top:2px;
+}
+
+tr.calrow td {
+border:1px solid #E5E5E5 !important;
+}
+
+.submenu {
+font-size:0.9em !important;
+}
+
+.headingSpan a {
+font-weight:bold;
+}
+
+/* always show nugget controls and content item contextual menu */
+/*
+PSU r:4879 -- update to styles to prevent no hover
+div.controls {
+visibility: visible !important;
+}
+ul.menu {
+visibility: visible !important;
+}
+psu r: 4879 end
+*/

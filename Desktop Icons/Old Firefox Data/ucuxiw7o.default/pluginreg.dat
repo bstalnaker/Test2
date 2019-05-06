@@ -1,0 +1,89 @@
+Generated File. Do not edit.
+
+[HEADER]
+Version|0.17|$
+Arch|x86-msvc|$
+
+[PLUGINS]
+npvkplugin.dll|$
+C:\Program Files (x86)\Kaspersky Lab\Kaspersky Anti-Virus 15.0.0\FFExt\virtual_keyboard@kaspersky.com\npvkplugin.dll|$
+4.0.10.15|$
+1412788712745|0|0|0|$
+Chrome Virtual Keyboard|$
+Plugins PDK|$
+1
+0|application/x-kav-virtual_keyboard||rts|$
+NPSWF32_15_0_0_152.dll|$
+C:\Windows\SysWOW64\Macromed\Flash\NPSWF32_15_0_0_152.dll|$
+15.0.0.152|$
+1410540194093|0|0|0|$
+Shockwave Flash 15.0 r0|$
+Shockwave Flash|$
+2
+0|application/x-shockwave-flash|Adobe Flash movie|swf|$
+1|application/futuresplash|FutureSplash movie|spl|$
+nppdf32.dll|$
+C:\Program Files (x86)\Adobe\Reader 11.0\Reader\browser\nppdf32.dll|$
+11.0.9.29|$
+1410514990000|0|0|0|$
+Adobe PDF Plug-In For Firefox and Netscape 11.0.9|$
+Adobe Acrobat|$
+7
+0|application/pdf|Acrobat Portable Document Format|pdf|$
+1|application/vnd.adobe.pdfxml|Adobe PDF in XML Format|pdfxml|$
+2|application/vnd.adobe.x-mars|Adobe PDF in XML Format|mars|$
+3|application/vnd.fdf|Acrobat Forms Data Format|fdf|$
+4|application/vnd.adobe.xfdf|XML Version of Acrobat Forms Data Format|xfdf|$
+5|application/vnd.adobe.xdp+xml| Acrobat XML Data Package|xdp|$
+6|application/vnd.adobe.xfd+xml|Adobe FormFlow99 Data File|xfd|$
+nppdf32.dll|$
+C:\Program Files (x86)\Adobe\Reader 11.0\Reader\AIR\nppdf32.dll|$
+11.0.9.29|$
+1410514990000|0|0|0|$
+Adobe PDF Plug-In For Firefox and Netscape 11.0.9|$
+Adobe Acrobat|$
+7
+0|application/pdf|Acrobat Portable Document Format|pdf|$
+1|application/vnd.adobe.pdfxml|Adobe PDF in XML Format|pdfxml|$
+2|application/vnd.adobe.x-mars|Adobe PDF in XML Format|mars|$
+3|application/vnd.fdf|Acrobat Forms Data Format|fdf|$
+4|application/vnd.adobe.xfdf|XML Version of Acrobat Forms Data Format|xfdf|$
+5|application/vnd.adobe.xdp+xml| Acrobat XML Data Package|xdp|$
+6|application/vnd.adobe.xfd+xml|Adobe FormFlow99 Data File|xfd|$
+npctrl.dll|$
+c:\Program Files (x86)\Microsoft Silverlight\5.1.30514.0\npctrl.dll|$
+5.1.30514.0|$
+1400044622000|0|0|0|$
+5.1.30514.0|$
+Silverlight Plug-In|$
+2
+0|application/x-silverlight|npctrl|scr|$
+1|application/x-silverlight-2|||$
+npcontentblocker.dll|$
+C:\Program Files (x86)\Kaspersky Lab\Kaspersky Anti-Virus 15.0.0\FFExt\content_blocker@kaspersky.com\npcontentblocker.dll|$
+4.0.9.111|$
+1397979724000|0|0|0|$
+Content Blocker Google Chrome Extension|$
+Plugins PDK|$
+1
+0|application/x-kav-content_blocker||rts|$
+NPSPWRAP.DLL|$
+C:\PROGRA~2\MICROS~1\Office14\NPSPWRAP.DLL|$
+14.0.4761.1000|$
+1269483758000|0|0|0|$
+The plug-in allows you to open and edit files using Microsoft Office applications|$
+Microsoft Office 2010|$
+1
+0|application/x-sharepoint|SharePoint Plug-in for Firefox||$
+NPAUTHZ.DLL|$
+C:\PROGRA~2\MICROS~1\Office14\NPAUTHZ.DLL|$
+14.0.4730.1010|$
+1263094938000|0|0|0|$
+Office Authorization plug-in for NPAPI browsers|$
+Microsoft Office 2010|$
+1
+0|application/x-msoffice14|14.0.4730.1010|*|$
+
+[INVALID]
+c:\Program Files (x86)\Microsoft Silverlight\5.1.30514.0\npctrlui.dll|$
+1400044622000|$

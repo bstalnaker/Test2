@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html id="siteInterface" class="interface ui-mobile" "="" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252"><!-- base href="https://cms.psu.edu/" -->
+		<meta name="viewport" content="width=device-width">
+
+<!-- mtb137 - moved into global css - link type="text/css" rel="stylesheet" href="mail/mobilemail/Content/jquery.mobile-1.3.2.min.css" /-->
+<script src="ANGEL%20Homepage_files/jquery-1.js"></script>
+<script src="ANGEL%20Homepage_files/jquery.js"></script>
+
+
+		<title>ANGEL Homepage</title>
+<!-- base href="https://cms.psu.edu/" -->
+		<script type="text/javascript" language="javascript">
+if (!window.ANGEL) { window.ANGEL = {}; }
+ANGEL.tabs = {};
+ANGEL.user = { uid:'WCS5056', username:'WCS5056', fullname:'WILLIAM STALNAKER', firstname:'WILLIAM', lastname:'STALNAKER', email:'WCS5056@PSU.EDU', accounttype:'0', accountrights:'4', accountstatus:'0', accountgroup:'', accountsource:'', accountcreated:'6/7/2014 3:31:53 AM', accountexpires:'', pwdchanged:'', lastlogin:'9/6/2014 11:53:44 PM', lastfailedlogin:'', logins:'36', recentfailedlogins:'0', totalfailedlogins:'0', attributes:'', userfiles:'/AngelUploads/Files/wcs5056/'};
+ANGEL.section = { type:'', title:'', instructorid:'', instructor:'', id:'', category:'', redirecturl:'', redirecttarget:'', stylesheet:'/AngelThemes/Stylesheets/Angel_7.css', credits:'', hidden:'', locked:'', disabled:'', viewableby:'', classbegins:'', classends:'', description:'', sectionrights:'0'};
+ANGEL.config = { api:'/api/v1.0/default.asp', base:'https://cms.psu.edu', root:'/', uploads:'/AngelUploads/', timeout:90, MaintenanceWindowStartTime:'99:99', CurrentServerHour:'23', CurrentServerMinute:'55', CurrentServerSecond:'26', optOutUrl:''};
+ANGEL.lang = {};
+ANGEL.lang['LogoutPrompt']='Are you sure you want to logout?';
+ANGEL.lang['InactivePrompt']='You have been inactive for an extended period.';
+ANGEL.lang['SessionExpired']='Your session has expired.';
+ANGEL.lang['ExtendMySession']='Extend my session';
+ANGEL.lang['TimeoutWarning']='Timeout Warning';
+ANGEL.lang['ErrorAPIConnect']='Error: could not connect to API.';
+ANGEL.lang['OK']='OK';
+ANGEL.lang['Cancel']='Cancel';
+ANGEL.lang['Alert']='Alert';
+ANGEL.lang['Confirm']='Confirm';
+ANGEL.lang['Prompt']='Prompt';
+ANGEL.lang['Agree']='Agree';
+ANGEL.lang['Decline']='Decline';
+ANGEL.lang['PleaseRead']='Please Read This Message';
+ANGEL.lang['Cookies1']='The ANGEL software application on this website has placed cookies on your computer.';
+ANGEL.lang['Cookies2']='Cookies are functions within the software that collect and store data which users input in the course of their utilization of the software. Before proceeding to further use the software application, you must consent to the collection, storage, and use of this data. More information can be found at <' + 'a style="color:#1E439B" href="http://kb.its.psu.edu/cms/article/6" target="_blank">http://kb.its.psu.edu/cms/article/6<' + '/a> and <' + 'a style="color:#1E439B" href="http://www.blackboard.com/privacy" target="_blank">http://www.blackboard.com/privacy<' + '/a>.';
+ANGEL.lang['Cookies4']='By clicking "Agree", you accept these cookies from this site, as well as how they collect, store, and use data which you input.';
+ANGEL.lang['MaintenanceWindowWarning']='Angel is shutting down for maintenance';
+ANGEL.lang['Cookies3']='';
+
+</script>
+<script language="javascript" type="text/javascript" src="ANGEL%20Homepage_files/dialog.js"></script>
+
+<link id="cssSiteUI" rel="Stylesheet" type="text/css" href="ANGEL%20Homepage_files/site.css">
+<script id="jsYahoo" language="Javascript" type="text/javascript" src="ANGEL%20Homepage_files/utilities.js"></script><script id="jsYUIContainer" language="Javascript" type="text/javascript" src="ANGEL%20Homepage_files/container-min.js"></script><script id="jsTokens" language="Javascript" type="text/javascript" src="ANGEL%20Homepage_files/jsTokens.asp"></script>
+
+		<link rel="STYLESHEET" type="text/css" href="ANGEL%20Homepage_files/Angel_7.css">
+	<style type="text/css">
+			#displayItm
+			{
+				display: none;
+			}
+			.interface a.border
+			{
+				border-right: 1px solid #999;
+				font-family: Arial, Helvetica, sans-serif;
+				padding: 0px 7px 0px 4px;
+				font-size: 12px;
+			}
+			.interface a.border:link
+			{
+				color: #32538F !important;
+				text-decoration: underline;
+			}
+			.interface a.border:visited
+			{
+				color: #6611CC !important;
+				text-decoration: underline;
+			}
+			.interface a.border:hover
+			{
+				color: #0000ff !important;
+				text-decoration: underline;
+			}
+			.interface a.border:active
+			{
+				color: #990000 !important;
+				text-decoration: underline;
+			}
+			a.psu_accessibleLink
+			{
+				font-size: 11px;
+				text-decoration: none;
+				font-weight: bold;
+				padding: 4px 0px;
+			}
+			a.psu_accessibleLink:link
+			{
+				color: #32538F !important;
+			}
+			a.psu_accessibleLink:visited
+			{
+				color: #6611CC !important;
+			}
+			a.psu_accessibleLink:hover
+			{
+				color: #0000ff !important;
+			}
+			a.psu_accessibleLink:active
+			{
+				color: #990000 !important;
+			}
+			div#skipmenu
+			{
+				position: relative;
+			}
+			div#skipmenu a.skippy
+			{
+				position: absolute;
+				top: -1000px;
+				left: -1000px;
+				height: 1px;
+				width: 1px;
+				overflow: hidden;
+			}
+			div#skipmenu a.skippy:active, div#skipmenu a.skippy:focus, div#skipmenu a.skippy:hover
+			{
+				position: absolute;
+				top: auto;
+				left: auto;
+				width: 100%;
+				height: 1em;
+				width: auto;
+				font-size: 1em;
+				font-weight: bold;
+				width: 100%;
+				padding-bottom: 15px;
+				color: black;
+				z-index: 100;
+				text-align: right;
+				margin-bottom: 25px;
+			}
+		</style>
+<script type="text/javascript">
+	if (navigator.userAgent.toLowerCase().indexOf("msie") < 0) {
+		var style = document.createElement("style");
+		style.appendChild(document.createTextNode("#displayItm { display: none; }"));
+		document.getElementsByTagName('head')[0].appendChild(style);
+	}
+</script><style>#displayItm { display: none; }</style>
+<style type="text/css">#slAdmin { display:none !important; }#slEport { display:none !important; }#slLps { display: none !important; }#slIm { display: none !important; }</style>
+</head>
+<body class="interface yui-skin-sam ui-mobile-viewport ui-overlay-c"><div style="min-height: 731px;" class="ui-page ui-body-c ui-page-panel ui-page-active" tabindex="0" data-url="/" data-role="page">
+
+
+		<div id="fader" style="display: none; position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; background-color: #eeeeee; overflow: hidden; margin: 0px; padding: 0px; z-index: 20000">
+			&nbsp;
+		</div>
+<div id="bodyBG1"></div><div id="bodyBG2"></div><div id="bodyBG3"></div><div id="bodyBG4"></div>
+		<div id="page" class="sidebarOff">
+			<div id="bannerToggle" class="expanded">
+				<a class="ui-link" target="_self" href="javascript:ANGEL.ui.banner.toggle()" title="hide/show banner">
+					<span>
+						hide/show banner
+					</span>
+				</a>
+			</div>
+    <div id="pageHeader">
+				<div id="skipmenu">
+					<a href="#skip" class="skippy ui-link">
+						Skip Navigation</a>
+					<a class="ui-link" id="psutop">
+					</a>
+				</div>
+        <div id="bannerSection">
+            <div class="banner">
+						<!-- mtb137 3/22/12 updated to new style remove IFRAME /-->
+						<div style="height: 92px; position: relative">
+							<div style="background-color:transparent;width: 336px;min-width:336px; height: 54px; z-index: 99; position: absolute; top: 25px; left: 15px;overflow:hidden;">
+								<a class="ui-link" href="http://www.psu.edu/" target="_blank" title="Visit Penn State's Home on the Web (New Window)" style="position: absolute; left: 0px; top: 0px;">
+									<img src="ANGEL%20Homepage_files/PSU_angelBanner_left.png" style="width: 86px; height: 54px; border: 0px none;" alt="Penn State Logo">
+								</a>
+								<a class="ui-link" href="http://cms.psu.edu/" target="_parent" title="Return to the ANGEL Homepage" style="position: absolute; left: 86px; top: 0px;">
+									<img src="ANGEL%20Homepage_files/PSU_angelBanner_right.png" style="width: 250px; height: 54px; border: 0px none;" alt="ANGEL Course Management System">
+								</a>
+							</div>
+							<div style="position: absolute; top: 32px; left: 85%; height: 16px; overflow: hidden;border-top:1px solid #e5e5e5;border-bottom:1px solid #e5e5e5;padding:2px;width:110px;text-align:center;">
+								<a class="psu_accessibleLink ui-link" href="https://cms.psu.edu/display/default.asp?title=PDA" target="_top" title="View ANGEL in Accessibility Mode" style="overflow:hidden;">
+									Accessible View
+								</a>
+							</div>
+							<div style="position: absolute; bottom: 12px; left: 357px; height: 16px; overflow: hidden">
+								<a class="border ui-link" href="http://www.libraries.psu.edu/" target="_blank" title="Visit the Penn State Libraries Site (New Window)">
+									Library</a>
+								<a class="border ui-link" href="https://cms.psu.edu/PSUregistrar.asp" target="_blank" title="Visit Penn State Registrar Registration Links (New Window)">
+									Registrar</a>
+								<a class="border ui-link" href="https://webmail.psu.edu/" target="_blank" title="Visit Penn State Web Mail (New Window)">
+									WebMail</a>
+								<a class="border ui-link" href="https://ucs.psu.edu/" target="_blank" title="Visit the Penn State UCS Page (New Window)">
+									UCS</a>
+								<a class="border ui-link" href="http://www.psu.edu/ur/search.html" target="_blank" title="Visit the Penn State University Search Page (New Window)">
+									Search Penn State</a>
+					</div>
+			</div>
+						<!-- Accessible link /-->
+						<!-- end mtb137 /-->
+		</div>
+    </div>
+<div role="banner" class="ui-header ui-bar-b" id="bannerMobile" data-role="header" data-theme="b">
+		<a title="ANGEL Navigation" data-wrapperels="span" data-iconshadow="true" data-shadow="true" data-corners="true" class="ui-btn-left ui-btn ui-btn-up-b ui-shadow ui-btn-corner-all ui-mini ui-btn-icon-notext" href="#pageSidebarMobile" data-role="button" data-icon="bars" data-iconpos="notext" data-theme="b" data-mini="true"><span class="ui-btn-inner"><span class="ui-btn-text">ANGEL Navigation</span><span class="ui-icon ui-icon-bars ui-icon-shadow">&nbsp;</span></span></a>
+		<h1 aria-level="1" role="heading" class="ui-title" id="bannertitle">ANGEL Homepage</h1>
+		
+        </div>
+
+				<div id="breadcrumbSection">
+					<div id="breadcrumbs">
+						<h3 class="screenreader">PortalBreadcrumbs</h3><ul id="breadcrumbMenu"><li id="bcHome"><a onclick="return checkForm();" class="ui-link" target="_self" href="https://cms.psu.edu/section/exit/default.asp" title=""><span>Home&nbsp;</span></a></li></ul>
+</div>
+				</div>
+				<a class="ui-link" id="skip" style="visibility: hidden; display: none;">
+				</a>			</div>
+    <div style="top: 137px;" id="identityWidget"><div id="identity"><span class="left"><span class="right"><span class="center">WILLIAM STALNAKER<a class="ui-link" target="_self" id="identityDropdown" href="javascript:ANGEL.ui.usermenu.toggle();" title="User Menu"><span>&gt;</span></a>
+</span></span></span></div><div id="userLinks"><ul id="userMenu" class="mktree"><li id="li8927274" class=" expanded"><a class="toggle toggleExpanded" title="+/-" href="javascript:tree.toggle('li8927274')" target="_self" id="toggleli8927274"><span>-</span></a><strong>Courses</strong><ul><li><a class="ui-link" target="_top" href="https://cms.psu.edu/section/default.asp?id=201415FAWD%5F%5F%5FRSTAT%5F500%5F001"><span>STAT  500 , Section 001: APPLIED STAT, Fall 2014</span></a></li></ul></li>
+</ul><div style="text-align:right"><a class="ui-link" target="_self" href="javascript:ANGEL.ui.usermenu.toggle();">close</a></div></div><div id="userPreview"></div></div>
+    <div style="height: 592px;" id="pageBody">
+        <div id="pageSidebar">
+            <h3 class="screenreader">Global Navigation</h3><ul id="globalNav"><li id="slUserHome"><a class="ui-link" target="_self" href="https://cms.psu.edu/section/exit/default.asp" title="Home" id="btnHome"><span>Home</span></a></li><li id="slHelp"><a class="ui-link" target="AngelHelp" href="https://cms.psu.edu/help/Help.asp" title="Help" id="btnHelp" onclick="var w = window.open('/Help/Help.asp', 'ANGEL_HELP'); w.focus(); return false;"><span>Help</span></a></li><li id="slLogoff"><a class="ui-link" target="_self" href="https://cms.psu.edu/signon/logout.asp" title="Logoff" id="btnLogon" onclick="return confirm(ANGEL.lang['LogoutPrompt']);"><span>Logoff</span></a></li><li id="slEport"><a class="ui-link" target="_self" href="https://cms.psu.edu/AuthenticationPass.asp?Type=PASS" title="ePortfolio" id="btnEport"><span>ePortfolio</span></a></li><li id="slSettings"><a class="ui-link" target="_top" href="https://cms.psu.edu/section/exit/default.asp?goto=/profile%2fsettings%2fdefault%2easp" title="Preferences" id="btnSettings"><span>Preferences</span></a></li></ul>
+<h3 class="screenreader">Display Menu</h3><ul id="displayMenu"><li id="display508"><a class="ui-link" target="_self" href="https://cms.psu.edu/accessibility/default.asp?ts=*timestamp*" title="Accessibility Menu"><span>508</span></a></li><li id="displayPda"><a class="ui-link" target="_self" href="https://cms.psu.edu/display/default.asp?title=PDA&amp;ts=*timestamp*" title="PDA Display Mode"><span>PDA</span></a></li></ul>
+
+            <div id="pageGuide">
+						<iframe style="height: 588px;" id="guideWin" name="AngelMenu" src="" title="Guide" scrolling="yes" onload="try { angelevent.raise('site_menu_load', self.AngelMenu); } catch(e) { }" frameborder="0" height="600" width="100%">						</iframe>
+		            
+            </div>
+
+
+        </div>
+<div class="ui-panel ui-panel-position-left ui-panel-display-push ui-panel-closed ui-body-c ui-panel-animate" data-role="panel" id="pageSidebarMobile" data-display="push">
+	<div class="ui-panel-inner"><br><h3 class="screenreader">Global Navigation</h3><ul class="ui-listview" id="tabLeftGlobalNav" data-theme="a" data-role="listview"><li class="ui-btn ui-btn-up-a ui-btn-icon-right ui-li-has-arrow ui-li ui-first-child" data-theme="a" data-iconpos="right" data-icon="arrow-r" data-wrapperels="div" data-iconshadow="true" data-shadow="false" data-corners="false" id="slUserHome"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a class="ui-link-inherit" target="_self" href="https://cms.psu.edu/section/exit/default.asp" title="Home" id="btnHome"><span>Home</span></a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li><li class="ui-btn ui-btn-up-a ui-btn-icon-right ui-li-has-arrow ui-li" data-theme="a" data-iconpos="right" data-icon="arrow-r" data-wrapperels="div" data-iconshadow="true" data-shadow="false" data-corners="false" id="slHelp"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a class="ui-link-inherit" target="AngelHelp" href="https://cms.psu.edu/help/Help.asp" title="Help" id="btnHelp" onclick="var w = window.open('/Help/Help.asp', 'ANGEL_HELP'); w.focus(); return false;"><span>Help</span></a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li><li class="ui-btn ui-btn-up-a ui-btn-icon-right ui-li-has-arrow ui-li" data-theme="a" data-iconpos="right" data-icon="arrow-r" data-wrapperels="div" data-iconshadow="true" data-shadow="false" data-corners="false" id="slLogoff"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a class="ui-link-inherit" target="_self" href="https://cms.psu.edu/signon/logout.asp" title="Logoff" id="btnLogon" onclick="return confirm(ANGEL.lang['LogoutPrompt']);"><span>Logoff</span></a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li><li class="ui-btn ui-btn-up-a ui-btn-icon-right ui-li-has-arrow ui-li" data-theme="a" data-iconpos="right" data-icon="arrow-r" data-wrapperels="div" data-iconshadow="true" data-shadow="false" data-corners="false" id="slEport"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a class="ui-link-inherit" target="_self" href="https://cms.psu.edu/AuthenticationPass.asp?Type=PASS" title="ePortfolio" id="btnEport"><span>ePortfolio</span></a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li><li class="ui-btn ui-btn-up-a ui-btn-icon-right ui-li-has-arrow ui-li ui-last-child" data-theme="a" data-iconpos="right" data-icon="arrow-r" data-wrapperels="div" data-iconshadow="true" data-shadow="false" data-corners="false" id="slSettings"><div class="ui-btn-inner ui-li"><div class="ui-btn-text"><a class="ui-link-inherit" target="_top" href="https://cms.psu.edu/section/exit/default.asp?goto=/profile%2fsettings%2fdefault%2easp" title="Preferences" id="btnSettings"><span>Preferences</span></a></div><span class="ui-icon ui-icon-arrow-r ui-icon-shadow">&nbsp;</span></div></li></ul><br></div>	
+
+ 
+
+</div>
+
+        <div style="margin-left: 50px;" id="pageMain">
+					<div style="display: none;" id="guideToggle" class="collapsed">
+						<a class="ui-link" target="_self" href="javascript:ANGEL.ui.sidebar.toggle()" title="hide/show guide">
+							<span>
+								Guide</span></a></div>
+					<iframe style="height: 588px;" id="contentWin" name="AngelContent" src="ANGEL%20Homepage_files/default.htm" title="Main Content" scrolling="auto" onload="try { angelevent.raise('site_main_load', self.AngelContent); } catch(e) { }" frameborder="0" width="100%">
+					</iframe>
+					<div id="pageFooter">
+					</div>
+        </div>
+    </div>
+</div>
+<script id="jsSiteUI" language="Javascript" type="text/javascript" src="ANGEL%20Homepage_files/ui.js"></script><script id="jsTreeList" language="Javascript" type="text/javascript" src="default_data/mktree.js"></script><style type="text/css">
+a.toggle,a:hover.toggle{display:block;position:absolute;top:0.4em;left:-1.1em;width:0.85em;height:0.85em;overflow:hidden;font-family:courier,monospace;font-weight:bold;font-size:1em;line-height:0.85em;border-style:outset;border-width:1px;text-decoration:none !important;text-align:center;padding:0px;margin:0px;color:black;background-color:white;background-repeat:no-repeat;background-position:center center;background-image:url(/AngelThemes/icons/map/toggle.png); }
+ul.mktree,ul.mktree ul{margin:0px;padding:0px 0px 0px 1.2em;}
+ul.mktree li,ul.mktree ul li{list-style:none !important;padding:2px;margin:0px;position:relative;}
+ul.mktree li.collapsed ul{display:none !important;}
+.treeControls{font-family:arial;font-size:85%;padding-left:0.2em;}
+</style>
+
+<!--[if lt IE 7]>
+   <style type="text/css">
+   div.leftCorner, div.rightCorner { visibility:hidden !important; }
+   #pageAddDefaults { float:right !important;clear:both !important; }
+   #pageSaveCancel { float:right !important;clear:both !important; }
+   </style>
+<script language="javascript" type="text/javascript">
+window.ie6 = true;
+</script>
+<![endif]-->
+<script language="javascript" type="text/javascript">
+function roundedCorners(arrEl) {
+   var arrAdd = ['leftCorner', 'rightCorner'];
+   for (var i=0; i<arrEl.length; i++) {
+       var d = document.createElement('div');
+       d.className = 'topborder';
+       arrEl[i].insertBefore(d, arrEl[i].firstChild);
+       for (var x=0; x<arrAdd.length; x++) {
+           var oTop = document.createElement('div');
+           oTop.className = arrAdd[x];
+           for (var y=0; y<=5; y++) {
+               var oDiv = document.createElement('div');
+               oDiv.className = 'rc' + y;
+               oTop.appendChild(oDiv);
+           }
+           arrEl[i].appendChild(oTop);
+       }
+     //alert(arrEl[i].innerHTML);
+   }
+}
+if (document.getElementById('tabMenu'))
+   roundedCorners(document.getElementById('tabMenu').getElementsByTagName('a'));
+var arr = [];
+var h2 = document.getElementsByTagName('h2');
+for (var x=0;x<h2.length;x++)
+   if (h2[x].className=='nugTitle')
+       arr.push(h2[x]);
+if (!window.ie6) { roundedCorners(arr); }
+</script>
+
+
+
+
+
+<div class="ui-panel-dismiss" data-panelid="pageSidebarMobile"></div></div><div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon ui-icon-loading"></span><h1>loading</h1></div></body></html>

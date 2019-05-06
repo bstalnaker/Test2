@@ -1,0 +1,266 @@
+.screenreader { position:absolute;left:-1px;top:-1px;height:1px;width:1px;overflow:hidden; }
+
+/* angel ui interface layout */
+html.interface { margin:0px !important;padding:0px !important;width:100% !important;height:100% !important;overflow:hidden !important; }
+body.interface { margin:0px !important;padding:0px !important;width:100% !important;height:100% !important;overflow:hidden !important; }
+body.interface a { text-decoration:none; }
+body.interface a:hover { text-decoration:underline; }
+#page { height:99.75%;width:auto;margin:0px;padding:0px; }
+#pageHeader { position:relative;width:auto;margin:0px;padding:0px;overflow:hidden; }
+#pageSidebar { position:absolute;height:100%;left:0px;top:0px;width:auto;clear:left;float:left;margin:0px;padding:0px 5px 0px 43px;height:100%; }
+#pageGuide { display:none;position:relative;margin:0px;padding:0px 4px;width:16em;min-width:205px;height:100%; }
+#page.sidebarOff #pageGuide { display:none; }
+#page.sidebarOn #pageGuide { display:block; }
+#pageMain { position:relative;height:100%;width:auto;clear:none;margin:0px 2px 0px 43px;}
+#pageFooter { position:relative;width:auto;clear:left;margin:0px;padding:0px 0px 2px 0px;text-align:center;font-size:0.8em; }
+#pageBody { position:relative;height:430px;width:auto; }
+#guideWin { margin:0px;padding:0px;border:solid 1px #CCCCCC;border-right:none;border-bottom:none; }
+#contentWin { margin:0px;padding:0px;border-top:solid 1px #999999;border-left:solid 1px #AAAAAA; }
+
+/* BREADCRUMBS */
+#breadcrumbSection { position:relative;margin:0px;padding:0px;min-height:1em; }
+#breadcrumbMenu { display:block;margin:0px;padding:4px 0px 6px 0px;white-space:nowrap; }
+#breadcrumbMenu li { display:inline;padding:0px 0px 0px 14px;background-repeat:no-repeat;background-attachment:scroll;background-position:left center; }
+#breadcrumbMenu li#bcHome { padding-left:0px; }
+
+/* SIDEBAR */
+#globalNav { position:absolute;top:0px;left:0px;margin:0px;padding:0px 0px 8px 0px;background-repeat:no-repeat;background-attachment:scroll;background-position:bottom left; }
+#globalNav li { margin:0px;padding:0px;list-style:none; }
+#globalNav li a { display:block;margin:0px;padding:0px;height:36px;width:45px;overflow:hidden;cursor:pointer;background-repeat:no-repeat;background-position:4px center; }
+#globalNav li a span { display:block;height:36px;width:45px;overflow:hidden;text-align:center;padding:0px;margin:0px;font-size:0.9em;background-repeat:no-repeat;background-position:4px center;white-space:nowrap; }
+
+#displayMenu { margin:0px;padding:0px;position:absolute;left:0px;bottom:0px; }
+#displayMenu li { margin:3px 0px;padding:0px;list-style:none;font-size:10px;line-height:12px; }
+#displayMenu li a { display:block;margin:0px;padding:24px 0px 0px 0px;width:40px;text-align:center;overflow:hidden;cursor:pointer;white-space:nowrap;border-style:none;background-position:center top;background-repeat:no-repeat; }
+#displayMenu li a span { display:block;margin:0px;padding:0px;overflow:hidden;text-align:center;font-size:0.9em; }
+
+/* BANNER */
+#bannerSection { padding:0px 0px 0px 40px;margin:0px;background-repeat:repeat-x;background-attachment:scroll;background-position:bottom left; }
+/* the bottom padding is to leave space for the tabs which are absolutely positioned at the bottom */
+#bannerSection h1 { font-size:120%;width:auto;margin:0px;padding:0.4em 0px 0.4em 25px; }
+#siteInterface #subjectLeft { display:none; }
+#siteInterface #subjectRight { display:none; }
+#siteInterface #bannerSection h1 { font-size:150%; }
+#siteInterface #tabMenu { display:none; }
+#siteInterface .tabbar { height:0px; }
+
+/* base settings for banner */
+.banner { width:auto;position:relative;margin:0px;padding:0px;overflow:hidden;background-repeat:no-repeat;background-attachment:scroll;background-position:top left; }
+.banner div.center { margin:0px;padding:0px;height:100%;background-repeat:repeat-x;background-attachment:scroll;background-position:top center; }
+.banner div.left { overflow:hidden;margin:0px;padding:0px;height:100%;background-repeat:no-repeat;background-attachment:scroll;background-position:top left;z-index:-1; }
+.banner div.right { overflow:hidden;margin:0px;padding:0px;height:100%;background-repeat:no-repeat;background-attachment:scroll;background-position:top right;z-index:-1; }
+#subjectRight { display:block;position:absolute;top:1px;right:-1px;background-color:transparent;border-style:none;width:400px;height:100%;background-repeat:no-repeat;background-attachment:scroll;background-position:center right;text-align:right; }
+#subjectLeft { display:block;position:absolute;top:1px;left:-1px;background-color:transparent;border-style:none;width:400px;height:100%;background-repeat:no-repeat;background-attachment:scroll;background-position:center left; }
+
+/* base settings for site graphics */
+#breadcrumbSection { background-repeat:no-repeat;background-attachment:scroll;background-position:top left;font-size:0.9em; }
+#breadcrumbs { margin-left:50px;background-repeat:repeat-x;background-attachment:scroll;background-position:top left; }
+#breadcrumbMenu { height:1.2em; }
+#bcExpand { display:none !important; }
+#guideToggle a { position:absolute;top:0px;left:-7px;width:8px;height:50px;overflow:hidden;z-index:1000;background-repeat:no-repeat;background-attachment:scroll;background-position:top left; }
+#guideToggle.expanded a { left:-9px;}
+#guideToggle a span { padding-left:50px; }
+#bannerToggle { position:absolute;top:0px;right:0px;height:16px;width:16px;overflow:hidden;z-index:1000;background-repeat:no-repeat;background-attachment:scroll;background-position:top right; }
+#bannerToggle a { display:block;width:16px;height:16px;overflow:hidden; }
+#bannerToggle a span { display:block;padding-left:70px; }
+
+/* default identity bubble settings */
+#identityWidget { position:absolute;top:105px;right:20px;z-index:100;font-size:0.9em;width:25em; }
+.bannerOff #identityWidget, #siteInterface .bannerOff #identityWidget {top: 13px}
+#siteInterface #identityWidget { top:85px; }
+#identity { position:absolute;right:-5px;top:-12px;height:22px;font-size:12px;white-space:nowrap;z-index:1; }
+#userLinks h4 { display:inline;font-size:1em;font-weight:bold; }
+#userLinks { position:absolute;top:0px;right:0px;display:none;clear:both;background:ghostwhite;color:#666666;border:solid 1px;padding:10px;z-index:0;white-space:nowrap;min-width:10em;max-height:300px;overflow:auto; }
+#userLinks a { color:#666666; }
+#userLinks a:hover { text-decoration:underline; }
+#identity span.left { display:block;margin:0px;padding:0px;overflow:hidden;background-repeat:no-repeat;background-attachment:scroll;background-position:top left; }
+#identity span.right { display:block;margin:0px;padding:0px;overflow:hidden;background-repeat:no-repeat;background-attachment:scroll;background-position:top right; }
+#identity span.center { display:block;margin:0px;padding:4px 18px 4px 4px;background-repeat:repeat-x;background-attachment:scroll;background-position:top center; }
+#preview { display:block;float:left;vertical-align:middle;height:16px;background-repeat:no-repeat;background-attachment:scroll;background-position:center center; }
+#identityDropdown { display:block;position:absolute;top:0px;right:4px;margin:2px 0 2px 4px;padding:0px;padding-left:10px;height:18px;vertical-align:middle;background-repeat:no-repeat;background-attachment:scroll;background-position:center center;border-left:solid 1px #cccccc; }
+
+/* default tab settings */
+.tabs { width:100%;font-size:90%;position:relative;padding-top:6px; }
+.tabbar { overflow:hidden;clear:both;margin:0px;padding:0px;height:0.3em;width:100%;background-repeat:repeat;background-attachment:scroll;background-position:top left; }
+#tabMenu { display:block;margin:0px;padding:0px;padding-left:20px;white-space:nowrap;overflow:hidden; }
+#tabMenu li { display:block;float:left;padding:0px;margin:0px;list-style:none;position:relative;overflow:hidden; }
+#tabMenu li a { margin:0px;padding:0px;cursor:pointer;font-weight:bold;min-width:7em;text-align:center;display:block; }
+#tabMenu li a span.left { display:block;margin:0px;padding:0px;overflow:hidden;background-repeat:no-repeat;background-attachment:scroll;background-position:top left; }
+#tabMenu li a span.right { display:block;margin:0px;padding:0px;overflow:hidden;background-repeat:no-repeat;background-attachment:scroll;background-position:top right; }
+#tabMenu li a span.center { display:block;margin:0px;padding:0.3em 0.5em 0.3em 0.5em;background-repeat:repeat-x;background-attachment:scroll;background-position:top center; }
+#tabMenu li a.active { font-weight:bold; }
+#tabMenu li { overflow:hidden; }
+#tabMenu li a { position:relative; }
+
+#tabMenu li a img { display:none;visibility:visible;width:16px;height:16px;margin:0px 3px;background-image:none;background-position:center center;background-repeat:no-repeat;vertical-align:middle; }
+
+/* popup box */
+#popupWin { position:absolute;top:35%;left:35%;min-width:10em;z-index:1001;border:outset 1px black;margin:0px;padding:0px;visibility:hidden; }
+#modal { position:absolute;top:0px;left:0px;width:100%;height:100%;z-index:1000;border-style:none;margin:0px;padding:0px;visibility:hidden;-moz-opacity:0.25;background-color:#000000; }
+#popup_title { padding:3px 10px 3px 3px; }
+#popup_contents { padding:0.5em; }
+#popup_buttons { text-align:center;padding:3px; }
+#popup_buttons button { text-align:center;width:6em; }
+
+.dialogPanel { position:absolute;min-width:18em;max-width:40%;border-style:none;background-color:Transparent;z-index:1001;visibility:hidden; }
+.dialog { background-color:#ffffff;color:#000000;border:outset 2px;margin-top:0.5em;margin-left:0.25em; }
+.dialogPanel a { color:blue; }
+.dialogIcon { position:absolute;top:0px;left:0px;width:2.2em; }
+.dialogPanel .hd { padding:0.3em;padding-left:2em;font-weight:bold;background-color:#999999;color:#ffffff; }
+.dialogPanel .hd a { color:#ffffff;text-decoration:none; }
+.dialogPanel .bd { padding:0.5em; }
+.dialogPanel .ft { text-align:center; }
+.dialogPanel .ft button { margin:0.25em;font-size:1em; }
+
+/********************************************
+IMAGES 
+*********************************************/
+
+/* site graphics */
+#bannerSection { background-image:url(/AngelThemes/interface/banner_page.png); }
+#breadcrumbSection { background-image:url(/AngelThemes/interface/breadcrumb_left.png); }
+#globalNav { background-image:url(/AngelThemes/interface/sidebar.png); }
+
+#guideToggle a { background-image:url(/AngelThemes/interface/sb_expand.gif); }
+#guideToggle.expanded a { background-image:url(/AngelThemes/interface/sb_collapse.gif); }
+
+/* the .bannerOff class is set by the banner toggle to collapse the banner */
+#bannerToggle a { background-image:url(/AngelThemes/interface/banner_collapse.png); }
+#bannerToggle.collapsed a { background-image:url(/AngelThemes/interface/banner_expand.png); }
+.bannerOff #bannerSection { display:none; }
+
+/* footer display icons */
+#displayMenu li#display508 a { background-image:url(/AngelThemes/Interface/508.png); }
+#displayMenu li#displayPda a { background-image:url(/AngelThemes/Interface/pda.png); }
+#displayMenu li#displayItm a { background-image:url(/AngelThemes/Interface/itm.png); }
+
+/* site buttons */
+#globalNav { z-index:1 }
+#globalNav li a { background-image:url(/AngelThemes/themes/common/buttons/default/Round/btn.png); }
+#globalNav li a:hover { background-image:url(/AngelThemes/themes/common/buttons/default/Round/btn_on.png); }
+#globalNav li#slLogon, #globalNav li#slLogoff { margin-bottom:8px; }
+#globalNav li a#btnHome span  { background-image:url(/AngelThemes/themes/common/buttons/default/home.png);padding-left:100px; }
+#globalNav li a#btnLogon span  { background-image:url(/AngelThemes/themes/common/buttons/default/logon.png);padding-left:100px; }
+#globalNav li a#btnHelp span  { background-image:url(/AngelThemes/themes/common/buttons/default/help.png);padding-left:100px; }
+#globalNav li a#btnEport span  { background-image:url(/AngelThemes/themes/common/buttons/default/eport.png);padding-left:100px; }
+#globalNav li a#btnAdmin span  { background-image:url(/AngelThemes/themes/common/buttons/default/admin.png);padding-left:100px; }
+#globalNav li a#btnLor span  { background-image:url(/AngelThemes/themes/common/buttons/default/lor.png);padding-left:100px; }
+#globalNav li a#btnSettings span  { background-image:url(/AngelThemes/themes/common/buttons/default/settings.png);padding-left:100px; }
+#globalNav li a#btnIm span  { background-image:url(/AngelThemes/themes/common/buttons/default/im.png);padding-left:100px; }
+#globalNav li a#btnLps span  { background-image:url(/AngelThemes/themes/common/buttons/default/lps.png);padding-left:100px; }
+
+/* identity bubble images */
+#identity span.center { background-image:url(/AngelThemes/interface/identity_center.png);margin-right:10px; }
+#identity span.left { background-image:url(/AngelThemes/interface/identity_left.png); }
+#identity span.right { background-image:url(/AngelThemes/interface/identity_right.png);margin-left:10px; }
+#identity, div#identity a { color:#666666; }
+#preview { background-image:url(/AngelThemes/interface/preview.png);margin:0px 4px 0px -10px;width:40px; }
+a.on#preview { background-image:url(/AngelThemes/interface/preview_on.png); }
+#preview span { display:none; }
+#identityDropdown { background-image:url(/AngelThemes/interface/unroll.png);width:8px; }
+#identityDropdown span { display:none; }
+
+/* arrow graphic */
+#breadcrumbMenu li { background-image:url(/AngelThemes/interface/arrow.png); }
+/* turn off arrow image for bcHome (first bc link) */
+#breadcrumbMenu li#bcHome { background-image:none; }
+
+
+/* create padding so the banner has some whitespace around it */
+#bannerSection { padding:6px 0px 8px 20px; }
+.banner { background-image:url(/AngelThemes/themes/common/banners/white.png);background-position:left top;background-repeat:no-repeat; }
+
+
+
+
+/* guideMenu tabs */
+#guideMenu {
+	height:70px;
+	padding: 0px;
+	margin:0px;
+	background: url('/AngelThemes/interface/7.4/gm.png') top right no-repeat; /* fills in right-hand side when text size is expanded.  can't just use this for the whole row or it overlaps the first tab ruining the corner */
+	font-size: 9px;
+}
+
+#guideMenu li {
+	background: url('/AngelThemes/interface/7.4/gm.png') top right no-repeat;
+	display:block;
+	float:left;
+	text-align:center;
+}
+
+#guideMenu li a {
+	background: url('/AngelThemes/interface/7.4/gm_divider.png') top left no-repeat;
+	display:block;
+	float:left;
+	height:60px;
+	width: 40px;
+}
+
+
+#guideMenu li#guideContents { background: url('/AngelThemes/interface/7.4/guideMenu_first.png') top left no-repeat;}
+#guideMenu li#guideContents a { background: none; width: 44px;}
+
+#guideMenu li.active {background:url('/AngelThemes/interface/7.4/guideMenu_active.png') top left no-repeat;}
+#guideMenu li#guideContents.active {background:url('/AngelThemes/interface/7.4/guideMenu_first_active.png') top left no-repeat;}
+
+#guideMenu li a span {
+	display: block;
+	padding-top: 30px;
+}
+
+#guideMenu li#guideContents a span {background: url('/AngelThemes/interface/7.4/gm_map.png') top no-repeat}
+#guideMenu li#guideNew a span {background: url('/AngelThemes/interface/7.4/gm_new.png') top no-repeat}
+#guideMenu li#guideTasks a span {background: url('/AngelThemes/interface/7.4/gm_tasks.png') top no-repeat}
+#guideMenu li#guideSearch a span {background: url('/AngelThemes/interface/7.4/gm_search.png') top no-repeat}
+#guideMenu li#guideAboutAngel a span {background: url('/AngelThemes/interface/7.4/gm_info.png') top no-repeat}
+
+#guideMenu li#guideDesign {display:none;}
+
+
+/*
+
+#guideMenu li {
+	display:block;
+	float:left;
+	margin-top: 0px;
+	height:60px;
+	background: url('/AngelThemes/interface/7.4/gm_divider.png') top left no-repeat;
+	text-align:center;
+	vertical-align:top;
+}
+#guideMenu li#guideContents {
+	background: url('/AngelThemes/interface/7.4/guideMenu_first.png') top left no-repeat;
+}
+
+#guideMenu li a {
+	display:block; width: 40px; height: 30px;
+	padding-top: 30px;
+	font-size: 9px;
+	background-repeat: no-repeat;
+}
+
+#guideMenu li#guideContents a {
+	width: 44px;
+}
+
+
+#guideMenu li a span {
+	display:block;
+	text-align:center;
+}
+
+#guideMenu li.active {
+	background:url('/AngelThemes/interface/7.4/guideMenu_active.png') top left no-repeat;
+}
+#guideMenu li#guideContents.active {
+	background:url('/AngelThemes/interface/7.4/guideMenu_first_active.png') top left no-repeat;
+}
+
+#guideMenu li#guideContents a {background: url('/AngelThemes/interface/7.4/gm_map.png') top no-repeat}
+#guideMenu li#guideNew a {background: url('/AngelThemes/interface/7.4/gm_new.png') top no-repeat}
+#guideMenu li#guideTasks a {background: url('/AngelThemes/interface/7.4/gm_tasks.png') top no-repeat}
+#guideMenu li#guideSearch a {background: url('/AngelThemes/interface/7.4/gm_search.png') top no-repeat}
+#guideMenu li#guideAboutAngel a {background: url('/AngelThemes/interface/7.4/gm_info.png') top no-repeat}
+
+*/
